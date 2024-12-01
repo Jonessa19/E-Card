@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas E-Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Serif', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #002b5c, #ffffff); /* Dark blue to white, like a snowy sky */
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    h1 {
+      position: absolute;
+      top: 10px;
+      color: #ffffff;
+      font-size: 2rem;
+      text-shadow: 2px 2px 5px #000;
+      text-align: center;
+      width: 100%;
+    }
+
+    .ecard {
+      width: 350px;
+      height: 500px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .snowflake {
+      animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(500px);
+      }
+    }
+
+    .message-box {
+      font-size: 13px;
+      font-weight: bold;
+      color: blanchedalmond;
+      padding: 10px;
+      text-align: center;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>MY CHRISTMAS E-CARD</h1>
+  <div class="ecard">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 500">
+      <!-- Background -->
+      <rect x="0" y="0" width="350" height="500" fill="coral" />
+
+      <!-- Snowflakes -->
+      <circle class="snowflake" cx="50" cy="50" r="3" fill="#ffffff" />
+      <circle class="snowflake" cx="150" cy="100" r="4" fill="#ffffff" />
+      <circle class="snowflake" cx="250" cy="70" r="3" fill="#ffffff" />
+      <circle class="snowflake" cx="300" cy="30" r="5" fill="#ffffff" />
+      <circle class="snowflake" cx="200" cy="150" r="4" fill="#ffffff" />
+      <circle class="snowflake" cx="100" cy="200" r="3" fill="#ffffff" />
+
+      <!-- Christmas Tree -->
+      <polygon points="175,80 140,160 210,160" fill="#008000" />
+      <polygon points="175,130 130,220 220,220" fill="#008000" />
+      <polygon points="175,190 120,280 230,280" fill="#008000" />
+      <rect x="165" y="280" width="20" height="40" fill="#8b4513" />
+
+      <!-- Star -->
+      <polygon points="175,60 170,80 180,70 170,70 180,80" fill="#ffdf00" />
+
+      <!-- Message -->
+      <foreignObject x="10" y="9" width="330" height="4005">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="message-box">
+          <i>
+            Dear Mom and Dad,<br><br>
+            I feel so incredibly fortunate to have you both as my parents. If I could choose, I would pick you over and over again, no matter what. As time goes on and you grow older, I promise to care for you with the same love and tenderness you've always shown me.
+I will go to the ends of the Earth for you, and reach for the stars if it means making you proud. I’ll never let you down, and I will repay your sacrifices in every way I can.<br><br>
+
+            Even though I can be stubborn at times, you’ve always been patient, kind, and understanding, and I am so grateful for that. Your love, wisdom, and support mean the world to me.<br><br>
+            
+            Thank you, Mama and Papa, for everything you do and for being the most amazing parents anyone could ask for.
+            
+            Merry Christmas!
+            
+            <br><br>
+            Sincerely,
+            Jonessa
+          </i>
+        </div>
+      </foreignObject>
+    </svg>
+  </div>
+</body>
+
+</html>
